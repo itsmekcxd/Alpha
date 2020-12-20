@@ -1,4 +1,41 @@
-  
+ *{
+ 	text-decoration: none;
+ 	list-style: none;
+ 	box-sizing: border-box;
+ } 
  body {
- 	background: grey;
+ }
+ /*******header**********/
+ 
+
+ .navbar-brand {
+ 	margin-top: 15px;
+ 	vertical-align: middle;
+ }
+ #header-nav {
+ 	background-color: blue;
+ }
+ .navbar-brand h1{
+ 	position: relative;
+ 	color: black;
+ 	font-size: 1.5em;
+ }
+ .navbar-brand a:hover, .navbar-brand a:focus {
+ 	text-decoration: none;
+ }
+ nav{
+ 	background: #0082e6;
+ 	height: 80px;
+ 	width: 100%;
+ }
+ nav ul{
+ 	float:right;
+ 	text-decoration: none;
+ 	color: white;
+ }
+ nav ul li{
+ 	display: inline;
+ 	text-decoration: none;
+ 	background-color: black;
+ 	margin-right: 30px;
  }
