@@ -23,19 +23,3 @@
  .navbar-brand a:hover, .navbar-brand a:focus {
  	text-decoration: none;
  }
- nav{
- 	background: #0082e6;
- 	height: 80px;
- 	width: 100%;
- }
- nav ul{
- 	float:right;
- 	text-decoration: none;
- 	color: white;
- }
- nav ul li{
- 	display: inline;
- 	text-decoration: none;
- 	background-color: black;
- 	margin-right: 30px;
- }

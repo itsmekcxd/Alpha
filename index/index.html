@@ -9,6 +9,7 @@
 AlphA Calculator
 </title>
 <link rel="stylesheet"  href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet"  href="./css/styles.css">
 <style type="text/css">
 	/********Base styling*******/
@@ -112,21 +113,47 @@ AlphA Calculator
 </style>
 <body>
 	<header>
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<div class="navbar-brand pull-left">
-						<a href="index.html"><h1>AlphA Calculator</h1></a>
-					</div>
-                </div>         
-			</div>
-		</nav>
+		  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">AlphA Calculator</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                 <li class="nav-item active">
+                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Features</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Subjects
+                       </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Digital Enterprenuership</a><br>
+                        <a class="dropdown-item" href="#">Transmission line and waveguide</a><br>
+                        <a class="dropdown-item" href="#">Analog Communication</a><br>
+                        <a class="dropdown-item" href="#">Digital image processing</a><br>
+                        <a class="dropdown-item" href="#">Control Systems</a><br>
+                        <a class="dropdown-item" href="#">Measuring Instruments</a><br>
 
-	</header>
+                      </div>
+                 </li>
+               </ul>
+             </div>
+          </nav>
+      </header>
     <p>PLEASE WORK</p>
 </body>
    <script src="./js/jquery-3.5.1"></script>
-   <script type="javascript" src="./js/bootstrap.min.js"></script>
-   <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 </html>
