@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+<title>
+About Us
+</title>
+<link rel="stylesheet"  href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet"  href="./css/styles.css">
+<style type="text/css">
+  /********Base styling*******/
+  *
+  {
+    box-sizing: border-box;
+
+  }
+
+  /****** Responsive frame work******/
+  .row{
+    width: 100%;
+  }
+  /**********for large devices**********/
+  @media (min-width: 1200px)
+  {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+      float: left;
+    }
+    .col-lg-1{
+      width: 8.33%;
+    }
+    .col-lg-2{
+      width: 16.66%;
+    }
+    .col-lg-3{
+      width: 25%;
+    }
+    .col-lg-4{
+      width: 33%;
+    }
+    .col-lg-5{
+      width: 41.66%;
+    }
+    .col-lg-6{
+      width: 50%;
+    }
+    .col-lg-7{
+      width: 58.33%
+    }
+    .col-lg-8{
+      width: 66.66%
+    }
+    .col-lg-9{
+      width: 74.99%
+    }
+    .col-lg-10{
+      width: 83.33%
+    }
+    .col-lg-11{
+      width: 91.66%
+    }
+    .col-lg-12{
+      width: 100%
+    }
+    }
+    /*******Medium devices*************/
+      @media(min-width: 960px) and (max-width: 1199px){
+        .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+
+      float: left;
+    }
+    .col-md-1{
+      width: 8.33%;
+    }
+    .col-md-2{
+      width: 16.66%;
+    }
+    .col-md-3{
+      width: 25%;
+    }
+    .col-md-4{
+      width: 33%;
+    }
+    .col-md-5{
+      width: 41.66%;
+    }
+    .col-md-6{
+      width: 50%;
+    }
+    .col-md-7{
+      width: 58.33%
+    }
+    .col-md-8{
+      width: 66.66%
+    }
+    .col-md-9{
+      width: 74.99%
+    }
+    .col-md-10{
+      width: 83.33%
+    }
+    .col-md-11{
+      width: 91.66%
+    }
+    .col-md-12{
+      width: 100%
+    }
+      }
+  }
+  <style type="text/css">
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+section {
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+</style>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">AlphA Calculator</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                 <li class="nav-item active">
+                   <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Features</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html">About Us</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Subjects
+                       </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Digital Enterprenuership</a><br>
+                        <a class="dropdown-item" href="#">Transmission line and waveguide</a><br>
+                        <a class="dropdown-item" href="#">Analog Communication</a><br>
+                        <a class="dropdown-item" href="#">Digital image processing</a><br>
+                        <a class="dropdown-item" href="#">Control Systems</a><br>
+                        <a class="dropdown-item" href="#">Measuring Instruments</a><br>
+
+                      </div>
+                 </li>
+               </ul>
+             </div>
+          </nav>
+      </header>
+    <div>
+      <section>
+        <h1>About Us</h1>
+      <div class="container">
+        <p>
+          We are a group of Engineers enthusiastic in creating quality free tools and content on the internet. The main purpose of this website is to provide a comrehensive collection of free online calculators for the ease of students use and to help check their answers by themself as they are attending online classes.
+        </p>
+        <p>
+          The calculations on this site were grouped into 6 subjects:<a href="">Transmission waveguide lines</a>,<a href="">Digital Enterprenurship</a>,<a href="">Analog Communication</a>,<a href="">Control Systems</a>,<a href="">Digital image processing </a> and <a href="">Measuring Instruments and sensors</a> until jan 2021. All the calculators were developed in-house . Some calculators use open -source Javascript components under different open-source licenses. All the Calculators are based on well-known formulas or equations from textbooks.More than 95% of the descriptive content was developed in-house with a small amount of content taken from different text books respective to the subjects.
+        </p>
+        <p>This site is owned and operated by ___________</p>
+        
+      </div>
+
+    <div>
+        <div class="container">
+          <form action="https://formspree.io/f/mrgoobdk" method="POST" id="my-form">
+      
+             <div class="form-group">
+               <label for="firstName"> First Name</label>
+               <input type="text" id="firstName" name="firstName">
+             </div>
+      
+             <div class="form-group">
+               <label for="latsName">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+      
+            <div class="form-group">
+              <label for="massage">Message</label>
+              <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+            </div>
+      
+            <button type="submit">Submit</button>
+           </form>
+        </div>
+        <div id="status"></div>
+      </section>
+    </div>
+      <div class="footer"  style="background-color: #DCDCDC; align-content: center; padding-top: 25px; padding-bottom: 25px; text-align: center;" id="footer"><div id="footerin">
+        <div id="footernav" style="color: black;">
+          <a href="./contactus.html" style="color: black;">about us</a> | <a href="#" style="color: black;">sitemap</a> | <a href="#" style="color: black;" >terms of use</a> | <a href="#" style="color: black;">privacy policy</a> &nbsp;  ©2020-2021 <a href="#" style="color: black;">AlphA Calculator</a>
+        </div>
+      </div>
+  </div>
+</body>
+   <script src="./js/jquery-3.5.1"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("my-form");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
+
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
+
+    </script>
+</head>
+</html>
